@@ -1,0 +1,88 @@
+@keyframes But1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes But2 {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes But3 {
+    0%{
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+
+
+@keyframes GigaAnim {
+    0% {
+        transform: translateX(-300px)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes Depil {
+    from{
+        width: 0px;
+        height: 0px;
+    }
+
+    to{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+h1 {
+    color: red;
+    transition-property: color;
+    transition-duration: 1s ;
+    max-width: fit-content;
+    Animation: GigaAnim 2s ;
+    /* animation-delay: 1s; */
+}
+
+
+h1:hover {
+    color: green;
+}
+
+p:active {
+    transform: rotate(720deg);
+    transition: transform 2s linear ;
+}
+ 
+.texte {
+    animation: Depil 1s;
+}
+
+#b1:hover {
+    animation: But1 0.2s infinite  alternate;
+}
+
+#b2:hover {
+    animation: But2 0.2s infinite  alternate;
+}
+
+#b3:hover {
+    animation: But3 0.5s linear  infinite  alternate;
+}
